@@ -1,8 +1,9 @@
-    CREATE TABLE IF NOT EXISTS `users` (
-        `id` int(10) unsigned NOT NULL,
-        `name` tinytext NOT NULL
-    );
-    
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` int(10) unsigned NOT NULL,
+    `name` tinytext NOT NULL
+)
+INSERT INTO `users` (`name`) VALUES ('tabarra');
+
 CREATE TABLE IF NOT EXISTS `apartments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
