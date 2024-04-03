@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS `users` (
-    `id` int(10) unsigned NOT NULL,
-    `name` tinytext NOT NULL
-)
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `name` tinytext NOT NULL,
+    PRIMARY KEY (`id`)
+);
 INSERT INTO `users` (`name`) VALUES ('tabarra');
 
 CREATE TABLE IF NOT EXISTS `apartments` (
