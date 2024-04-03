@@ -1,9 +1,10 @@
 CREATE TABLE IF NOT EXISTS `users` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `name` tinytext NOT NULL,
-    PRIMARY KEY (`id`),
-    INSERT INTO `users` (`name`) VALUES ('tabarra'),
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `users` (`name`) VALUES ('tabarra');
 
 CREATE TABLE IF NOT EXISTS `apartments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
