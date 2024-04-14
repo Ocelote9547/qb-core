@@ -1,11 +1,11 @@
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL, -- Aquí faltaba una coma
+  `name` varchar(255) NOT NULL, -- Comentario sin coma
   PRIMARY KEY (`id`),
-  KEY `name` (`name`(255)) -- Especifica la longitud para la clave `name`
+  KEY `name` (`name`(255))
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `users` (`name`) VALUES ('tabarra');
+INSERT INTO `users` (`name`) VALUES ('n3mesisrp');
 
 CREATE TABLE IF NOT EXISTS `apartments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
