@@ -51,7 +51,7 @@ CREATE TABLE `bank_accounts` (
   `account_name` varchar(50) DEFAULT NULL,
   `account_balance` int(11) NOT NULL DEFAULT 0,
   `account_type` enum('shared','job','gang') NOT NULL,
-  `users` longtext DEFAULT '[]'
+  `users` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
