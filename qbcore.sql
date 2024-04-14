@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL, -- Comentario sin coma
   PRIMARY KEY (`id`),
-  KEY `name` (`name`(255))
+  KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `users` (`name`) VALUES ('n3mesisrp');
