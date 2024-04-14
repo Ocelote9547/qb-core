@@ -1,6 +1,9 @@
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) DEFAULT NULL, -- Comentario sin coma
+  `name` varchar(255) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `label` varchar(255) DEFAULT NULL,
+  `citizenid` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
